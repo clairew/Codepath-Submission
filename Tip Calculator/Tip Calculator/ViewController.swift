@@ -7,17 +7,21 @@
 //
 
 import UIKit
+import CoreLocation
+import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
 
-    
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var controlTip: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor.cyanColor()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,17 +32,6 @@ class ViewController: UIViewController {
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
     }
-    
-    /*@IBAction func calculateTip(sender: AnyObject) {
-        
-        let tipPercentages = [0.15, 0.18, 0.2]
-        let bill = Double(billField.text!) ?? 0 
-        let tip = bill * tipPercentages[controlTip.selectedSegmentIndex]
-        let total = bill + tip
-        
-        tipLabel.text = String(format:"$%f.2", tip)
-        totalLabel.text = String(format:"$%f.2",total)
-    }*/
     
     @IBAction func calculateTip(sender: AnyObject) {
         let tipPercentages = [0.15, 0.18, 0.2]

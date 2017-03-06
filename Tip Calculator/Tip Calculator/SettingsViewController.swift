@@ -13,6 +13,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var defaultTip: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.greenColor()
 
         // Do any additional setup after loading the view.
     }
@@ -25,7 +26,6 @@ class SettingsViewController: UIViewController {
     @IBAction func setTip(sender: AnyObject) {
         let tipValues = [0.15, 0.18, 0.2]
         let defaults = NSUserDefaults.standardUserDefaults()
-        print(tipValues[defaultTip.selectedSegmentIndex])
         defaults.setDouble(tipValues[defaultTip.selectedSegmentIndex], forKey:"defaultTip")
         defaults.synchronize()
     }
