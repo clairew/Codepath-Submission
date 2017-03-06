@@ -5,7 +5,7 @@
 
 Submitted by: **Claire Wang**
 
-Time spent: **2-3** hours spent in total
+Time spent: **3-4** hours spent in total
 
 ## User Stories
 
@@ -37,7 +37,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 Describe any challenges encountered while building the app.
 
 1. When building the app, sometimes I encountered the Thread 1 SIGBART error. I was able to trouble shoot the problem by reading the stack trace and also looking up what the SIGBART error is.
-2. Figuring out which libraries and methods to use for the optional stories. 
+2. Figuring out which libraries and methods to use for the optional stories.
 
 ## License
 
