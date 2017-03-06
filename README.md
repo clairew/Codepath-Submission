@@ -11,8 +11,8 @@ Time spent: **2-3** hours spent in total
 
 The following **required** functionality is complete:
 
-* [] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [ ] Settings page to change the default tip percentage.
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [x] Settings page to change the default tip percentage.
 
 The following **optional** features are implemented:
 * [ ] UI animations
@@ -35,6 +35,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+1. When building the app, sometimes I encountered the Thread 1 SIGBART error. I was able to trouble shoot the problem by reading the stack trace and also looking up what the SIGBART error is. 
 
 ## License
 
